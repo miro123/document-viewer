@@ -128,6 +128,7 @@ DV.load = function(documentRep, options) {
   DV.viewers[id]     = viewer;
   // Once we have the JSON representation in-hand, finish loading the viewer.
   var continueLoad = DV.loadJSON = function(json) {
+     console.debug( json);
     var viewer = DV.viewers[json.id];
     viewer.schema.importCanonicalDocument(json);
     viewer.loadModels();

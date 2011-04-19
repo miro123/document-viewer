@@ -69,7 +69,7 @@ DV.Schema.events = {
       var pageNumber = parseInt(pageIndex,10)+1;
       me.viewer.$('.DV-textContents').replaceWith('<pre class="DV-textContents">' + text + '</pre>');
       me.elements.currentPage.text(pageNumber);
-      me.elements.textCurrentPage.text('p. '+(pageNumber));
+      me.elements.textCurrentPage.text('s. '+(pageNumber));
       me.models.document.setPageIndex(pageIndex);
       me.helpers.setActiveChapter(me.models.chapters.getChapterId(pageIndex));
 
